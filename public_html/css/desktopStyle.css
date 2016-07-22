@@ -1,0 +1,626 @@
+/********************************************************/
+/*												  		*/
+/*					DesktopStyle.CSS			  		*/
+/*												  		*/
+/*					1.) GEN. BODY				  		*/
+/*					2.) HEADER							*/
+/*					3.) HOME                            */
+/*														*/
+/*      										  		*/
+/********************************************************/
+
+
+/***************************/
+/*		1.) GEN. BODY	   */
+/***************************/
+
+body, p{margin:0;}
+
+/* Font-Faces */
+@font-face {
+    font-family: 'libre';
+    src: url('fonts/librebaskerville-regular-webfont.woff2') format('woff2'),
+         url('fonts/librebaskerville-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'league';
+    src: url('fonts/leaguespartan-bold-webfont.woff2') format('woff2'),
+         url('fonts/leaguespartan-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Begin Template Classes */
+
+.margin-b-small{margin: 0 0 30px 0;}
+.margin-b-large{margin: 0 0 60px 0;}
+
+.margin-v-small{margin: 30px 0;}
+.margin-v-large{margin: 60px 0;}
+
+.margin-h-small{margin: 0 20px;}
+.margin-h-large{margin: 0 20px;}
+
+.margin-small{margin: 30px;}
+.margin-large{margin: 60px;}
+
+.font-body{font-size: .9em; text-align: justify;}
+.font-small{font-size: 1.2em;}
+.font-medium{font-size: 1.4em;}
+.font-large{font-size: 1.9em;}
+
+.clear{clear:both;}
+/* End Template Classes */
+
+
+/* Begin Mobile */
+
+@media (min-width: 100px) and (max-width: 767px){
+    /* Begin Nav */
+    
+    .mobileButton {
+		height: 50px;
+		width: 60px;
+		float: left;
+		margin: 5px 10px;
+		background: #424243;
+		border-radius: 5px;
+		box-shadow: inset 1px 1px 3px #aaa;
+    }
+    
+    .mobileButton > ul {
+		margin: 0 auto;
+		list-style-type: none;
+		padding: 5px;
+		margin-top: -10px;
+    }
+    
+    
+    .mobileButton > ul > li {
+		color: #f1f1f1;
+		margin: 0 auto;
+		padding: 0;
+		font-weight: 900;
+		height: 12px;
+		text-align: center;
+		cursor: pointer;
+    }
+    
+    .mobileButtonClicked {
+		box-shadow: inset -1px -1px 3px #ddd;
+    }
+    
+     header {
+		height: 60px;
+		width: 100%;
+		top: 0;
+		position: fixed;
+		background: #edeff0;
+		display: none;
+     }
+     
+     .headerImage {
+		width: 50%;
+		float: right;
+     }
+     
+     #headerImg {
+		height: 55px;
+		margin: 5px;
+		padding-right: 5px;
+     }
+    .nav-logo{
+        width: 70%;
+        display: block;
+        margin: 30px auto;
+    }
+
+    .nav-menu{
+        padding: 0;
+    }
+    
+    #center-nav {
+		width: 40%;
+		float: left;
+		clear: both;
+		margin-top: -10px;
+		background: #424243;
+		display: none;
+    }
+    
+    #center-nav .nav-menu {
+		font-size: 14px;
+		float: left;
+		width: 100%;
+		background: #424243;
+		margin: 0;
+    }
+    
+    #center-nav .nav-menu-item, #center-nav .nav-menu-item-last {
+		margin: 0 auto;
+		padding: 15px 0;
+		width: 100%;
+		padding-left: 10px;
+		cursor: pointer;
+		border-top: 1px solid #676768;
+		background: #545455;
+		color: #b6b6b6;
+    }
+    
+    #center-nav .nav-menu-item:hover, #center-nav .nav-menu-item-last:hover {
+		color: #d5d5d5;
+    }
+    
+    #center-nav .nav-menu-item:active, #center-nav .nav-menu-item-last:active {
+		color: #f4f4f4;
+		background: #878788;
+    }
+
+	#center-nav li {
+		text-align: left;
+	}
+
+    .nav-menu-item, .nav-menu-item-last{
+        list-style: none;
+        display:block;
+        text-align: center;
+        font-family: league, sans-serif;
+        color: #979797;
+        box-sizing: border-box;
+    }
+    .nav-menu-item:hover{
+        color: #424242;
+    }
+    .btn-red{
+        list-style: none;
+        display: inline;
+        text-align: center;
+        font-family: league, sans-serif;
+        font-size: 1.8em;
+        color: white;
+        background-color: #D15A5A;
+        margin: 30px auto;
+        border-radius: 7px;
+        padding: 15px;
+    }
+    /* End Nav */
+
+    /* Begin Body */
+    h1{
+        font-family: league, sans-serif;
+        display: block;
+        text-align: center;
+        color: #424242;
+        padding: 0 40px;
+    }
+    h2{
+        font-family: league, sans-serif;
+        display: block;
+        text-align: center;
+        color: #424242;
+        padding: 0 40px;
+    }
+    p{
+        font-family: libre, serif;
+        text-align: center;
+        padding: 0 40px;
+    }
+    .derron-cutout{
+        display: none;
+    }
+
+    /* End Body*/
+
+
+    /* Begin Vision Cards */
+    .issue-card{
+
+    }
+    
+    .issue-link {
+		background: transparent;
+		width: 250px;
+		height: 250px;
+		position: absolute;
+		left: 21.5%;
+		z-index: 1;
+		border-radius: 250px;
+		cursor:pointer;
+    }
+    
+    .issue-image{
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .issue-subtitle{
+        font-family: league, sans-serif;
+        color: #D15A5A;
+        display: block;
+        text-align: center;
+    }
+
+    /* End Vision Cards */
+    
+    /* Begin More */
+    .map-center{
+        margin: 0 auto;
+    }
+    .map{
+        display:block;
+        margin:0 auto;
+        width: 80%;
+        height: 100%;
+    }
+    /* End More */
+}
+
+/* End Mobile */
+
+
+
+
+/* Begin Tablet */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+ 
+	.mobileButton {
+		display: none;
+	}
+ 
+	header {
+		height: 60px;
+		width: 100%;
+		top: 0;
+		position: fixed;
+		background: #edeff0;
+		display: none;
+     }
+     
+     .headerImage {
+		width: 30%;
+		float: left;
+     }
+     
+     #headerImg {
+		height: 55px;
+		margin: 5px;
+		padding-left: 30px;
+     }
+ 
+ 
+    /* Begin Nav */
+    .nav-logo{
+        width: 40%;
+        display:block;
+        margin: 30px auto;
+    }
+
+    .nav-menu{
+        padding: 0;
+        overflow: auto;
+        display: inline-block;
+    }
+
+    .nav-menu-item, .nav-menu-item-last{
+        list-style: none;
+        display:block;
+        float:left;
+        text-align: center;
+        font-family: league, sans-serif;
+        color: #979797;
+        box-sizing: border-box;
+        margin-right: 20px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .nav-menu-item-last{
+        margin-right: 0px
+    }
+    .nav-menu-item:hover, .nav-menu-item-last:hover{
+        color: #424242;
+    }
+    .center-nav{
+        display: block;
+        text-align: center;
+    }
+    
+    #center-nav {
+		width: 60%;
+		float: right;
+    }
+    
+    #center-nav .nav-menu {
+		font-size: 14px;
+		float: right;
+		padding-right: 50px;
+    }
+    
+    /* End Nav */
+
+
+    /* Begin Body */
+    h1{
+        font-family: league, sans-serif;
+        display: block;
+        color: #424242;
+        padding: 0 60px;
+    }
+    h2{
+        font-family: league, sans-serif;
+        display: block;
+        color: #424242;
+        padding: 0 60px;
+    }
+    p{
+        font-family: libre, serif;
+        padding: 0 60px;
+    }   
+    .derron-cutout{
+        display: block;
+        width: 20%;
+        float: right;
+    }
+    .about-container{
+        display: block;
+        width: 80%;
+        float: left;
+        box-sizing: border-box;
+    }
+    .post-container{
+        display: block;
+        box-sizing: border-box;
+    }
+
+    /* End Body*/
+
+
+    /* Begin Vision Cards */
+    .issues-container{
+        display: block;
+        text-align:center;
+    }
+    
+    .issue-link {
+		background: transparent;
+		width: 250px;
+		height: 250px;
+		position: absolute;
+		left: 21.5%;
+		z-index: 1;
+		border-radius: 250px;
+		cursor:pointer;
+    }
+    
+    .issue-card{
+        display: inline-block;
+        width: 28%;
+    }
+    .issue-image{
+        display: block;
+        margin: 0 auto;
+
+    }
+    .issue-subtitle{
+        font-family: league, sans-serif;
+        color: #D15A5A;
+        display: block;
+        text-align: center;
+    }
+
+
+    /* End Vision Cards */
+    
+    /* Begin More */
+    .map{
+        display: block;
+        margin: 0 auto;
+    }
+    /* End More */
+
+    
+}
+
+/* End Tablet */
+
+
+
+
+/* Begin Computer */
+
+@media (min-width: 1024px) {
+     /* Begin Nav */
+     
+     .mobileButton {
+		display: none;
+     }
+		
+     header {
+		height: 60px;
+		width: 100%;
+		top: 0;
+		position: fixed;
+		background: #edeff0;
+		display: none;
+     }
+     
+     .headerImage {
+		width: 30%;
+		float: left;
+     }
+     
+     #headerImg {
+		height: 55px;
+		margin: 5px;
+		padding-left: 30px;
+     }
+     
+    .nav-logo{
+        width: 30%;
+        display:block;
+        margin: 30px auto;
+    }
+
+    .nav-menu{
+        padding: 0;
+        overflow: auto;
+        display: inline-block;
+    }
+
+    .nav-menu-item, .nav-menu-item-last{
+        list-style: none;
+        display:block;
+        float:left;
+        text-align: center;
+        font-family: league, sans-serif;
+        color: #979797;
+        box-sizing: border-box;
+        margin-right: 20px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        cursor: pointer;
+    }
+    .nav-menu-item-last{
+        margin-right:0px;
+    }
+    .nav-menu-item:hover, .nav-menu-item-last:hover{
+        color: #424242;
+    }
+    .center-nav{
+        display: block;
+        text-align: center;
+    }
+    
+    #center-nav {
+		width: 60%;
+		float: right;
+    }
+    
+    #center-nav .nav-menu {
+		font-size: 14px;
+		float: right;
+		padding-right: 50px;
+    }
+    
+    /* End Nav */
+
+
+    /* Begin Body */
+    h1{
+        font-family: league, sans-serif;
+        display: block;
+        color: #424242;
+        padding: 0 200px;
+    }
+    h2{
+        font-family: league, sans-serif;
+        display: block;
+        color: #424242;
+        padding: 0 200px;
+    }
+    p{
+        font-family: libre, serif;
+        padding: 0 200px;
+    }   
+    .derron-cutout{
+        display: block;
+        width: 20%;
+        padding-right: 100px;
+        box-sizing: border-box;
+        float: right;
+    }
+    .about-container{
+        display: block;
+        width: 80%;
+        float: left;
+        box-sizing: border-box;
+    }
+    .post-container{
+        display: block;
+        box-sizing: border-box;
+    }
+
+    /* End Body*/
+
+
+    /* Begin Vision Cards */
+    .issues-container{
+        display: block;
+        text-align:center;
+    }
+    
+    .issue-card{
+        display: inline-block;
+        width: 23%;
+        position: relative;
+    }
+    
+    .issue-link {
+		background: transparent;
+		width: 250px;
+		height: 250px;
+		position: absolute;
+		left: 21.5%;
+		z-index: 1;
+		border-radius: 250px;
+		cursor:pointer;
+    }
+    
+    .issue-image{
+        display: block;
+        margin: 0 auto;
+		width: 250px;
+    }
+    .issue-subtitle{
+        font-family: league, sans-serif;
+        color: #D15A5A;
+        display: block;
+        text-align: center;
+    }
+
+
+    /* End Vision Cards */
+    
+        
+    /* Begin More */
+    .map{
+        display: block;
+        margin: 0 auto;
+    }
+    /* End More */
+    
+    /* Computer Templates Adjustment */
+    
+    .font-body{font-size:1em;}
+    .font-small{font-size: 1.5em;}
+    .font-medium{font-size: 1.9em;}
+    .font-large{font-size: 2.4em;}
+    
+    footer {
+		padding: 25px 0;
+		width: 100%;
+		height: 25px;
+		margin-top: 50px;
+    }
+    
+    footer > p {
+		text-align: center;
+		color: #424242;
+		width: 60%;
+		border-top: 1px solid #424242;
+		margin: 0 auto;
+		padding: 10px;
+    }
+    
+}
+
+/* End Computer */
+ 
+
+
+

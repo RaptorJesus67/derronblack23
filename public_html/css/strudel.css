@@ -1,0 +1,59 @@
+
+
+@font-face {
+	font-family: Lato;
+	src: url(fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+	font-family: Lato Italic;
+	src: url(fonts/Lato-Italic.ttf);
+}
+
+@font-face {
+	font-family: Lato Bold;
+	src: url(fonts/Lato-Bold.ttf);
+}
+
+@font-face {
+	font-family: Lato Bold Italic;
+	src: url(fonts/Lato-BoldItalic.ttf);
+}
+
+@font-face {
+	font-family: Lato Hairline;
+	src: url(fonts/Lato-Hairline.ttf);
+}
+
+@font-face {
+	font-family: Lato Light;
+	src: url(fonts/Lato-Hairline.ttf);
+}
+
+@font-face {
+	font-family: Montserrat;
+	src: url(fonts/Montserrat-Regular.otf);
+}
+
+@font-face {
+	font-family: Montserrat Light;
+	src: url(fonts/Montserrat-Light.otf);
+}
+
+@font-face {
+	font-family: Montserrat Hairline;
+	src: url(fonts/Montserrat-Hairline.otf);
+}
+
+@font-face {
+	font-family: Montserrat Bold;
+	src: url(fonts/Montserrat-Bold.otf);
+}
+
+@font-face {
+	font-family: Montserrat Black;
+	src: url(fonts/Montserrat-Black.otf);
+}
+
+@import http://fonts.googleapis.com/css?family=Oleo+Script;
+
